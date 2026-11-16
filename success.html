@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Trust Run</title>
+<style>
+body{font:17px/1.5 -apple-system,system-ui,sans-serif;background:#f7f8fa;color:#14171f;margin:0;display:grid;place-items:center;min-height:100vh}
+main{background:#fff;border:1px solid #e3e6ec;border-radius:16px;padding:36px;max-width:520px;margin:16px}
+code{display:block;font-size:22px;letter-spacing:1px;background:#f0f2f5;padding:14px;border-radius:10px;margin:16px 0;user-select:all}
+a.btn{display:inline-block;background:#1f8f55;color:#fff;font-weight:600;padding:12px 22px;border-radius:12px;text-decoration:none}
+</style></head><body><main>
+<h1>You're in. Your trial has started.</h1>
+<p id="msg">Creating your license key...</p>
+<code id="key" hidden></code>
+<p id="next" hidden>Save this key somewhere safe. Open Trust Run, choose <b>Enter license key</b>, and paste it.</p>
+<a class="btn" href="https://github.com/zlotecki/trustrun-site/releases/latest/download/Trust-Run.dmg">Download for Mac</a>
+</main>
+<script>
+const id=new URLSearchParams(location.search).get("session_id");
+const msg=document.getElementById("msg");
+async function go(n){
+  if(!id){msg.textContent="Missing checkout session. If you paid, email getstax39@gmail.com.";return}
+  try{
+    const r=await fetch("https://trustrun-billing.kzlotecki.workers.dev/license?session_id="+encodeURIComponent(id));
+    const d=await r.json();
+    if(d.key){msg.textContent="Your license key:";const k=document.getElementById("key");k.textContent=d.key;k.hidden=false;document.getElementById("next").hidden=false;return}
+  }catch(e){}
+  if(n<8)setTimeout(()=>go(n+1),2000);
+  else msg.textContent="Your key is taking longer than usual. Email getstax39@gmail.com with your receipt and we will send it.";
+}
+go(0);
+</script></body></html>
