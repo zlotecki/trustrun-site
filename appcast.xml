@@ -3,13 +3,26 @@
     <channel>
         <title>Trust Run</title>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Tue, 24 Nov 2026 14:56:15 -0500</pubDate>
+            <sparkle:version>1.1.2</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.2/Trust-Run-1.1.2.dmg" length="13322651" type="application/octet-stream" sparkle:edSignature="TfPku9fbBIsnncfjCcKDM3uj+sNXLFxfusOqL28w3zK1k8aGFtAe8+2T0pr8oVZ9rYxlWC+05iZBjnGaZc+SCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.2/Trust%20Run1.1.2-1.1.1.delta" sparkle:deltaFrom="1.1.1" length="288174" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="EZo9JvXXgnuy6mXC/XKyCTNHeX72r5P3cA1PfhmbIArauS7rAySI1qKBw6ZwmbjTyfANt5LZWoNzy3/y3cZKDg=="/>
+                <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.2/Trust%20Run1.1.2-1.1.0.delta" sparkle:deltaFrom="1.1.0" length="293254" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="d0CZCZfvpbWBkFyql+vpeWbL4z9Ij78u58IPdZMRdWrJyl6yQrVroGnFW+7Vqck+wDFwPtxWkAa8/ngTeuzMAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Tue, 24 Nov 2026 13:13:23 -0500</pubDate>
             <sparkle:version>1.1.1</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.1/Trust-Run-1.1.1.dmg" length="13320524" type="application/octet-stream" sparkle:edSignature="/LhCtUafA/N1igup10nFH4izHRCTlZrBsC/X88tEv2ke6pHrRVl1j05Hhq9ycNVta1zdQpS1q9X+OmskD7laCQ=="/>
+            <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.2/Trust-Run-1.1.1.dmg" length="13320524" type="application/octet-stream" sparkle:edSignature="/LhCtUafA/N1igup10nFH4izHRCTlZrBsC/X88tEv2ke6pHrRVl1j05Hhq9ycNVta1zdQpS1q9X+OmskD7laCQ=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.1/Trust%20Run1.1.1-1.1.0.delta" sparkle:deltaFrom="1.1.0" length="301338" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fO6A3ADuXeOyddBlMU157r34s5Da2w+MNSd+QD5rZrMtXCKTTL7Qc4114oESdnxR4BxktCI7uiFfITxwdgq2Cg=="/>
             </sparkle:deltas>
@@ -21,7 +34,7 @@
             <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.1/Trust-Run-1.1.0.dmg" length="13302979" type="application/octet-stream" sparkle:edSignature="wArAHgrZimfmGSOESBMBBs0avrbOUEmGiNHTEr/tAs1Np1sUd+3H0EQh/lrpeDcvor3IZhP0rx/ixw8cDoACBw=="/>
+            <enclosure url="https://github.com/zlotecki/trustrun-site/releases/download/v1.1.2/Trust-Run-1.1.0.dmg" length="13302979" type="application/octet-stream" sparkle:edSignature="wArAHgrZimfmGSOESBMBBs0avrbOUEmGiNHTEr/tAs1Np1sUd+3H0EQh/lrpeDcvor3IZhP0rx/ixw8cDoACBw=="/>
         </item>
     </channel>
 </rss>
