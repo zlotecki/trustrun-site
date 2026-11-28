@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tall Grass Digital</title>
+<meta name="description" content="Tall Grass Digital is an independent studio building simple, private, genuinely useful apps. Portfolio, support and privacy for every Tall Grass Digital app.">
+<style>
+  :root{
+    --bg:#0b1220; --bg2:#15306b; --ink:#f8fafc; --muted:#aab6cc;
+    --card:#111c33; --card2:#0d1628; --line:#243250; --accent:#38bdf8;
+    --good:#34d399;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    color:var(--ink); background:radial-gradient(1200px 600px at 70% -10%,#1b3a84 0%,transparent 60%),linear-gradient(170deg,var(--bg),#0a1326);
+    min-height:100vh; line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:0 24px}
+  nav{display:flex; align-items:center; justify-content:space-between; padding:26px 0}
+  .brand{display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:-.01em}
+  .brand svg{width:34px;height:34px}
+  .navlinks a{color:var(--muted); font-size:14px; margin-left:22px}
+  .navlinks a:hover{color:var(--ink)}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .hero{padding:48px 0 40px}
+  .eyebrow{color:var(--accent); font-size:13px; letter-spacing:.14em; text-transform:uppercase; font-weight:700}
+  h1{font-size:40px; line-height:1.15; letter-spacing:-.025em; margin:14px 0}
+  .lede{color:var(--muted); font-size:19px; max-width:620px}
+
+  section{padding:30px 0}
+  h2{font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-bottom:18px}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:32px} }
+  .app{background:linear-gradient(180deg,var(--card),var(--card2)); border:1px solid var(--line); border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:8px}
+  .app h3{font-size:18px; letter-spacing:-.01em}
+  .app p{color:var(--muted); font-size:14px; flex:1}
+  .meta{display:flex; align-items:center; gap:10px; font-size:12px; margin-top:6px}
+  .pill{padding:3px 9px; border-radius:999px; font-weight:600}
+  .pill.live{background:rgba(52,211,153,.14); color:var(--good)}
+  .pill.soon{background:rgba(56,189,248,.14); color:var(--accent)}
+  .app a.store{font-weight:600; font-size:14px}
+
+  .panel{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px}
+  .panel p{color:var(--muted); margin-bottom:10px}
+  .panel a{font-weight:600}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media (max-width:640px){ .two{grid-template-columns:1fr} }
+
+  footer{color:var(--muted); font-size:13px; padding:40px 0; border-top:1px solid var(--line); margin-top:30px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <svg viewBox="0 0 100 100" role="img" aria-label="Tall Grass Digital">
+          <rect width="100" height="100" rx="24" fill="#0b1324"/>
+          <g stroke="#38bdf8" stroke-width="5" stroke-linecap="round" fill="none">
+            <path d="M30 80 V46"/><path d="M42 80 V36"/><path d="M54 80 V42"/>
+            <path d="M66 80 V32"/><path d="M50 80 V26"/>
+          </g>
+          <circle cx="50" cy="22" r="5" fill="#38bdf8"/>
+        </svg>
+        Tall Grass Digital
+      </div>
+      <div class="navlinks">
+        <a href="#apps">Apps</a>
+        <a href="#support">Support</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="eyebrow">Independent app studio</div>
+      <h1>Simple, private apps<br>that each do one thing well.</h1>
+      <p class="lede">Tall Grass Digital builds small, focused tools — no clutter, no accounts, no tracking. Everything runs on your device.</p>
+    </header>
+
+    <section id="apps">
+      <h2>Our apps</h2>
+      <div class="grid">
+        <div class="app" id="mockingbird">
+          <h3>Mockingbird</h3>
+          <p>Your lights, plugs, weather and music on one calm home dashboard. For iPhone and iPad.</p>
+          <div class="meta"><span class="pill live">● Live</span><span class="muted">Lifestyle</span></div>
+          <a class="store" href="https://apps.apple.com/us/app/id6838586715">View on the App Store →</a>
+        </div>
+        <div class="app" id="quickcode">
+          <h3>QuickCode QR Maker</h3>
+          <p>Turn any link, text, Wi-Fi network or contact into a clean, shareable QR code — instantly, on your device.</p>
+          <div class="meta"><span class="pill soon">● Coming soon</span><span class="muted">Utilities</span></div>
+        </div>
+        <div class="app" id="subwatch">
+          <h3>SubWatch</h3>
+          <p>See every subscription and free trial in one place, what you really spend each month and year, and get a reminder before a trial turns into a charge.</p>
+          <div class="meta"><span class="pill soon">● Coming soon</span><span class="muted">Utilities</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <div class="panel">
+        <p>Questions, feedback, or a problem with any Tall Grass Digital app? We're glad to help — and we read everything.</p>
+        <p>Email: <a href="mailto:support@tallgrassdigital.com">support@tallgrassdigital.com</a></p>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy</h2>
+      <div class="panel">
+        <p><strong style="color:var(--ink)">Private by default.</strong> Tall Grass Digital apps are built to collect as little as possible. Anything you create stays on your device. We don't run ads, analytics, or third-party trackers.</p>
+        <div class="two" style="margin-top:14px">
+          <div>
+            <p style="color:var(--ink);font-weight:600;margin-bottom:4px">No accounts</p>
+            <p>Our apps don't require you to sign up or hand over personal details to use them.</p>
+          </div>
+          <div>
+            <p style="color:var(--ink);font-weight:600;margin-bottom:4px">On your device</p>
+            <p>Your content and settings live on your device, not on our servers.</p>
+          </div>
+        </div>
+        <p style="margin-top:14px;font-size:13px">Individual apps note any specific data handling on their App Store privacy page. Questions? <a href="#support">Contact us</a>.</p>
+      </div>
+    </section>
+
+    <footer>© 2026 Tall Grass Digital LLC. All rights reserved.</footer>
+  </div>
+</body>
+</html>
